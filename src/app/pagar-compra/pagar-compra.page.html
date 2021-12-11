@@ -1,9 +1,35 @@
-<ion-header>
+<!--página PAGAR COMPRA-->
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>pagar_compra</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-tab [routerLink]="['/atacadao-express-qrcode']">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-tab>
+        <ion-title>
+          Pagamento
+        </ion-title>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="container">
+    <h2>Pague com o cartão atacadão</h2>
+    <img src="assets/card-atacadao.svg" alt="">
+    <h2>Digite a senha do seu cartão</h2>
 
+    <div class="esqueds">
+      <div class="esquad"></div>
+      <div class="esquad"></div>
+      <div class="esquad"></div>
+      <div class="esquad"></div>
+      <div class="esquad"></div>
+      <div class="esquad"></div>
+    </div>
+  </div>
+  <ion-tab [routerLink]="['/finalizar']">
+    <img src="assets/Keyboard.svg" alt="">
+    </ion-tab>
 </ion-content>

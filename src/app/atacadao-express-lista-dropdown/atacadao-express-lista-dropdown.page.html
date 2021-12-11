@@ -1,9 +1,95 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>atacadao_express_lista_dropdown</ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-tab [routerLink]="['/atacadao-express-qrcode']">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-tab>
+        <ion-title>
+          Corta fila
+        </ion-title>
+
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div class="container">
+    <div class="banner">
+      <div class="value-sale">
+        <p>Valor da compra</p>
+        <p>R$ <strong>753,00</strong></p>
+      </div>
+      <div class="other-values">
+        <div class="value-economic">
+          <p>Valor economizado</p>
+          <p>R$ <strong>82,00</strong></p>
+        </div>
+        <div class="value-available">
+          <p>Valor disponível</p>
+          <p>R$ <strong>753,00</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <h1>Suas compras</h1>
+
+    <ul>
+      <li>{{resultado}} kg cebola R$ {{produto}}
+        <ion-icon name="chevron-up-outline"></ion-icon>
+      </li>
+
+      <div class="contagem">
+        <div class="camps">
+          <ion-icon name="add" (click)="soma()"></ion-icon>
+        </div>
+        <div class="camps value">
+          <label id="camp">{{resultado}}</label>
+        </div>
+        <div class="camps">
+          <ion-icon name="remove" (click)="subtrair()"></ion-icon>
+        </div>
+        <div class="other-values">
+          <div class="value-generic">
+            <p>R${{produto}}</p>
+          </div>
+          <div class="value-desc">
+            <p>R${{desconto}}</p>
+          </div>
+        </div>
+      </div>
+
+
+      <li>80 kg cebola R$ 203
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </li>
+      <li>80 kg cebola R$ 203
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </li>
+      <li>80 kg cebola R$ 203
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </li>
+    </ul>
+
+    <ion-tab [routerLink]="['/pagar-compra']">
+      <button>
+        Comprar
+      </button>
+    </ion-tab>
+
+    <div class="block-two">
+      <div class="blocks-two">
+        <ion-icon name="qr-code-outline"></ion-icon>
+        <p>Ler produto</p>
+      </div>
+      <div class="blocks-two">
+        <ion-tab [routerLink]="['/home']">
+          <ion-icon name="list-outline"></ion-icon>
+          <p>Ver lista</p>
+        </ion-tab>
+      </div>
+    </div>
+  </div>
 </ion-content>
