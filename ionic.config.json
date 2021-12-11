@@ -1,0 +1,7 @@
+{
+  "name": "appiesus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
