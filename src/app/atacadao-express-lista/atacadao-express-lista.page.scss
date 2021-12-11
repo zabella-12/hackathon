@@ -1,0 +1,95 @@
+ion-title {
+    text-align: center;
+}
+
+ion-icon {
+    font-size: 32px;
+    margin: auto 5%;
+   
+}
+
+.container {
+    color: #333333;
+    width: 95%;
+    margin: auto;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+
+.value-economic {
+    color: #13AA19;
+}
+
+.value-economic strong {
+    font-weight: 400;
+    font-size: 24px;
+    
+}
+
+.value-available {
+    color: #F76620;
+}
+
+.value-available strong {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+strong {
+    font-size:30px;
+    font-weight: 600;
+}
+
+
+h1 {
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+  
+}
+
+ul li::before {
+    content: "\2022";  
+    color: #F26520; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    
+    font-size:50px;
+    
+}
+
+  li ion-icon {
+      float: right;
+      color: #F26520;
+  }
+
+  button {
+    width: 343px;
+    height: 48px;
+    left: 16px;
+    top: 606px;
+    background: #13AA19;
+    border-radius: 8px;
+  }
+ 
+  .block-two {
+    margin-top: 5%;
+    display: flex;
+    color: #333333;
+    justify-content: space-around;
+    align-items: center;
+}
+.blocks-two {
+    text-align: center;
+}

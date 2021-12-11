@@ -1,20 +1,52 @@
+<!--página EDUCCA-->
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        <ion-title>
+          Atacadão Educa
+        </ion-title>
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container">
+    <h1>Seus gastos</h1>
+
+    <img src="assets/grafic.svg" alt="">
+    <h1>Menu</h1>
+
+    <div class="block">
+        <div class="blocks">
+        <ion-tab [routerLink]="['/atacadao-express-qrcode']">  
+        <ion-icon name="cart-outline"class="alinhamento"></ion-icon>
+       <p>Corta fila</p>
+      </ion-tab>
+      </div>
+
+      <div class="blocks">
+          
+          <ion-icon name="barcode-outline"class="alinhamento"></ion-icon>     
+        <p>Pagar contas</p>
+      
+      </div>
+
+      <div class="blocks">
+        <ion-icon name="cash-outline"class="alinhamento"></ion-icon>
+        <p>Renegociar dívida</p>
+      </div>
+    </div>
+
   </div>
+
 </ion-content>

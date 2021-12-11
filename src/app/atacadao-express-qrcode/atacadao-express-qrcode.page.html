@@ -1,0 +1,40 @@
+<!--página Atacadão express - qr code-->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-tab [routerLink]="['/home']">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-tab>
+        <ion-title>
+          Corta fila
+        </ion-title>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <img src="assets/qrcode.svg" alt="">
+  <div class="block-two">
+    <div class="blocks-two">
+      <ion-icon name="qr-code-outline"></ion-icon>
+      <p>Ler produto</p>
+    </div>
+    <div class="blocks-two">
+      <ion-tab [routerLink]="['/atacadao-express-lista']">
+        <ion-icon name="list-outline"></ion-icon> 
+      <p>Ver lista</p>
+    </ion-tab>
+    </div>
+  </div>
+
+
+</ion-content>
