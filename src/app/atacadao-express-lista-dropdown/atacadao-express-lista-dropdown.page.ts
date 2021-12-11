@@ -27,7 +27,7 @@ export class AtacadaoExpressListaDropdownPage implements OnInit {
 calcular(){
 var desc: number = 0.00
 
- this.produto = 2.5
+ this.produto = 2.9
  this.produto *= this.resultado
   
   this.desconto = (this.produto * 0.05).toFixed(2)

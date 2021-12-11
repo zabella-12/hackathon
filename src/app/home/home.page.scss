@@ -15,6 +15,11 @@ ion-icon {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
 h1 {
   font-weight: 300;
   font-style: normal;
@@ -48,3 +53,8 @@ img {
   margin: 10% auto;
 }
 
+.suggestion {
+  margin: auto -1rem;
+  display: flex;
+  justify-content: space-between;
+}
