@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AtacadaoExpressListaDropdownPage implements OnInit {
 
   constructor() { }
-  public produto: number = 0;
+  public produto: any = 0;
   public desconto: any = 0
   public resultado: number = 0;
 
@@ -25,13 +25,9 @@ export class AtacadaoExpressListaDropdownPage implements OnInit {
   }
 
 calcular(){
-var desc: number = 0.00
-
- this.produto = 2.9
- this.produto *= this.resultado
-  
+  this.produto = 2.9
+  this.produto = (this.produto * this.resultado).toFixed(2)
   this.desconto = (this.produto * 0.05).toFixed(2)
-  
 }  
 
   ngOnInit() {
